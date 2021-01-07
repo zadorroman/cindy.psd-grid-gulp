@@ -1,0 +1,28 @@
+.footer {
+
+    .gallery-f {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 425px);
+        gap: 0px 0px;
+
+        &__item {
+            background: #1a1a1a;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover {
+                .gallery-f__img {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__img {
+            opacity: .3;
+            transition: all .3s;
+        }
+    }
+}
+
+
